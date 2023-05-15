@@ -1,9 +1,9 @@
-<h1>Convert <%= @currency %></h1>
+<h1>Convert <%= @from_currency %></h1>
 
-Go <a href="/">back</a>.
+Go <a href="/forex">back</a>.
 
 <ul>
 <% @symbols_array.each_key{|key| %>
-  <li><a href="/forex/<%= @currency %>/<%= key %>">Convert <%= @currency%> to <%= key %>... </li>   
+  <li><a href="/forex/<%= @from_currency %>/<%= key %>">Convert <%= @from_currency%> to <%= key %>... </li>   
 <% } %>
 </ul>
